@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Ordering.Api.Protos";
+
+package orderHistory;
+
+service OrderHistory(){
+	rpc GetOrderHistory (OrderHisotryRequestDto) returns (IEnumerable<OrderHistoryItem>)
+}
